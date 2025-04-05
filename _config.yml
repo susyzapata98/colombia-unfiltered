@@ -2,11 +2,17 @@ title: "Colombia Unfiltered"
 description: "From myth to reality. A country beyond Escobar."
 author: Susana Zapata
 email: susyzapata98@gmail.com
-baseurl: "" # Déjalo así si el sitio es tipo username.github.io
-url: "https://susyzapata98.github.io/colombia-unfiltered" # Reemplaza con tu URL
-theme: jekyll-theme-cayman
+baseurl: ""
+url: "https://susyzapata98.github.io/colombia-unfiltered"
 
+# Cambiamos el tema
+remote_theme: mmistakes/minimal-mistakes
 
-# Opcional
+# Plugins recomendados por el tema
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
