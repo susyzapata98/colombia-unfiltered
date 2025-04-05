@@ -1,12 +1,19 @@
 ---
-layout: default
-title: "Inicio"
+layout: single
+title: "Colombia Unfiltered"
+permalink: /
 ---
 
-# 🇨🇴 Colombia Unfiltered
+🇨🇴 **Colombia Unfiltered**  
+*From myth to reality. A country beyond Escobar.*
 
-Bienvenido a *Colombia Unfiltered*, un espacio donde desmitificamos el imaginario popular sobre Colombia. Desde su vibrante cultura y biodiversidad hasta su café, ciudades y transformación social.  
+Every time I say “I’m Colombian,” someone mentions Pablo Escobar or asks about cocaine.  
+But Colombia is **not a Netflix narco series**.
 
-Explora, aprende y descubre un país más allá de los estereotipos.
+It’s a story of resilience, of art, of coffee, of reinvented cities,  
+of breathtaking landscapes and people who never give up.
 
-➡️ Lee las últimas publicaciones abajo ⬇️
+It’s time to tell the truth: a country that has suffered, yes,  
+but one that never stopped blooming.
+
+🌟 Explore the blog and discover a Colombia that goes far beyond stereotypes.
