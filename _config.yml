@@ -1,0 +1,11 @@
+title: "Colombia Unfiltered"
+description: "From myth to reality. A country beyond Escobar."
+author: Sebastián Martínez
+email: tuemail@ejemplo.com
+baseurl: "" # Déjalo así si el sitio es tipo username.github.io
+url: "https://susyzapata98.github.io/colombia-unfiltered" # Reemplaza con tu URL
+theme: jekyll-theme-minimal
+
+# Opcional
+plugins:
+  - jekyll-feed
