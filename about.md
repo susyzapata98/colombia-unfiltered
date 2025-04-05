@@ -1,13 +1,12 @@
 ---
-layout: page
-title: "Sobre mí"
+layout: single
+title: "About Me"
 permalink: /about/
 ---
 
-## 🌎 Sobre el autor  
+Hi, I’m Susana Zapata, and this space is dedicated to showing what Colombia truly is.  
+Beyond the stigma and sensationalism, I believe in telling real stories –  
+of our people, our land, our struggles and hopes.
 
-Soy Susana Zapata, creadora de *Colombia Unfiltered*. Mi misión es mostrar la verdadera Colombia, más allá de los estereotipos.  
-
-Este blog es un espacio para explorar la cultura, la naturaleza y la historia del país de una manera fresca y auténtica.  
-
-📩 ¿Quieres contactarme? Escríbeme en [Instagram](https://www.instagram.com/susyzapata98).
+This blog was born from the desire to change the narrative.  
+Thank you for being part of that journey. 💛💙❤️
