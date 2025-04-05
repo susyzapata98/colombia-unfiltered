@@ -1,9 +1,10 @@
 ---
-layout: home
+layout: single
 title: "Blog"
 permalink: /blog/
 ---
 
-# 📝 Publicaciones recientes
+Here you'll find the latest posts about Colombia — unfiltered and honest.  
+From politics and nature to coffee, cities, and the country's transformation.
 
-Aquí encontrarás todas las publicaciones sobre Colombia Unfiltered. ¡Explora y disfruta! 🌎☕🌿
+⬇️ Scroll down to explore recent blog entries and dive into Colombia’s real story.
