@@ -1,42 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Colombia Unfiltered</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
       background-color: #0d1117;
       color: #f0f6fc;
-      font-family: system-ui, sans-serif;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
       padding: 2rem;
     }
-    h1 {
-      color: #facc15;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
-    nav a {
-      color: #60a5fa;
-      margin-right: 1rem;
-      text-decoration: none;
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    .section h2 {
+      color: #facc15;
+      font-size: 2rem;
+      margin-top: 2rem;
     }
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
+      background: #161b22;
+      padding: 2rem;
+      text-align: center;
       color: #94a3b8;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <h1>🇨🇴 Colombia Unfiltered</h1>
-  <p><em>From myth to reality. A country beyond Escobar.</em></p>
-  <p>Colombia is not a Netflix narco series. It is resilience, art, biodiversity, coffee, and people who never give up.</p>
-  <footer>© 2025 Colombia Unfiltered. Created with 💛💙❤️</footer>
+  <header>
+    <div>
+      <h1>Colombia Unfiltered</h1>
+      <p>From myth to reality. A country beyond Escobar.</p>
+    </div>
+  </header>
+
+  <div class="section">
+    <h2>1. Voices in the Storm: Colombia’s Political Reality Today</h2>
+    <img src="https://images.unsplash.com/photo-1635193297535-5e5d73326e0d" alt="Political activism in Colombia" />
+    <p>Colombia’s political landscape is far from perfect, but it is not chaos. Tensions remain, but so does a growing, active civil society. Youth engagement is on the rise, debates are dynamic, and a demand for transparency is reshaping public life. Though challenges persist, democracy breathes and slowly evolves.</p>
+
+    <h2>2. The Green Jewel of the Continent: Colombia’s Natural Beauty</h2>
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Natural Colombian landscape" />
+    <p>Colombia offers rainforest, two oceans, Andean peaks, deserts, plains and rivers like Caño Cristales. As the second most biodiverse country on Earth, it is home to unique species of birds, butterflies and flora. Each region is a hidden treasure, rich in colour and life.</p>
+
+    <h2>3. Liquid Gold: Colombian Coffee Around the World</h2>
+    <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907" alt="Colombian coffee beans" />
+    <p>Colombian coffee is more than a global product; it is a symbol of pride. Grown by families across the Coffee Region, it represents heritage and hard work. Colombia ranks third in exports but often first in quality, delivering warmth to tables worldwide.</p>
+
+    <h2>4. Five Cities, Five Reasons to Believe</h2>
+    <img src="https://images.unsplash.com/photo-1587134616033-0f4d6e6f7fdf" alt="Bogotá from Monserrate" />
+    <p><strong>Bogotá</strong> – A cultural and intellectual hub with Monserrate’s view and Latin America’s largest bike network.<br>
+       <strong>Medellín</strong> – Once violent, now a beacon of innovation with its Metrocable and inclusive urbanism.<br>
+       <strong>Cali</strong> – The joyful heart of Afro-Colombian rhythm and the global capital of salsa.<br>
+       <strong>Barranquilla</strong> – Home to the UNESCO-listed Carnival and a centre of modern development.<br>
+       <strong>Bucaramanga</strong> – Framed by Chicamocha Canyon, it's a city blending nature and progress.</p>
+
+    <h2>5. From Shadows to Light: Colombia in the 90s vs Now</h2>
+    <img src="https://images.unsplash.com/photo-1616633321120-e5d5016dfcfb" alt="Colombian street art" />
+    <p>The 1990s were Colombia’s darkest chapter: violence, bombings, cartels. But this isn’t the full story. Today, universities thrive, art flourishes, and former combatants rebuild. From survival to hope, Colombia has transformed its scars into canvases.</p>
+
+    <h2>6. Colombia's Future: A Nation in Progress</h2>
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Colombian innovation and future" />
+    <p>Colombia’s future lies in innovation, peace, and identity. With tech start-ups, eco-tourism and community projects growing, the country is redefining its narrative. A younger, more connected generation is shaping a new path — one that looks forward, not back.</p>
+  </div>
+
+  <footer>
+    © 2025 Colombia Unfiltered. Built with pride and truth.
+  </footer>
 </body>
 </html>
