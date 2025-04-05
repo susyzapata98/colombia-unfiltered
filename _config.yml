@@ -2,18 +2,28 @@ title: "Colombia Unfiltered"
 description: "From myth to reality. A country beyond Escobar."
 author: Susana Zapata
 email: susyzapata98@gmail.com
-baseurl: ""
+
+baseurl: "" # Dejar vacío si no estás usando una subcarpeta
 url: "https://susyzapata98.github.io/colombia-unfiltered"
 
-# Cambiamos el tema
+# Tema remoto oficial
 remote_theme: mmistakes/minimal-mistakes
 
-# Plugins recomendados por el tema
+# Plugins permitidos por GitHub Pages
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-archives
-  - jekyll-paginate
-# Colombia Unfiltered – última edición
+
+# Opcional: navegación si estás usando archivos en _data/navigation.yml
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+
+# Idioma (opcional)
+lang: es
+
+# SEO (opcional y básico)
+title_separator: "|"
+timezone: America/Bogota
