@@ -13,15 +13,26 @@
       color: #f0f6fc;
     }
     header {
-      background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');
+      position: relative;
+      background-image: url('random-institute-lGe9uSnHcpI-unsplash.jpg');
       background-size: cover;
       background-position: center;
       height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
       color: white;
+      text-align: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
       padding: 2rem;
     }
     header h1 {
@@ -59,7 +70,8 @@
 </head>
 <body>
   <header>
-    <div>
+    <div class="overlay"></div>
+    <div class="header-content">
       <h1>Colombia Unfiltered</h1>
       <p>From myth to reality. A country beyond Escobar.</p>
     </div>
