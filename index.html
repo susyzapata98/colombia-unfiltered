@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<nav class="side-menu">
+<div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+<nav class="side-menu" id="sideMenu">
   <ul>
     <li><a href="#political-reality">Voices in the Storm: Colombia’s Political Reality Today</a></li>
     <li><a href="#natural-beauty">The Green Jewel of the Continent: Colombia’s Natural Beauty</a></li>
@@ -21,6 +22,70 @@
     <li><a href="#colombia-future">The Future of Colombia</a></li>
   </ul>
 </nav>
+<style>
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    background-color: #0033A0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .side-menu {
+    display: none;
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 60px;
+    z-index: 100;
+  }
+
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .side-menu li {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .side-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+
+  .side-menu a:hover {
+    background-color: #FFD700;
+  }
+
+  /* Añadir animación para la apertura del menú */
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+</style>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("sideMenu");
+    menu.style.display = (menu.style.display === "block" ? "none" : "block");
+    if(menu.style.display === "block") {
+      menu.style.animation = "slideIn 0.3s forwards";
+    }
+  }
+</script>
 
   <header class="hero">
     <div class="overlay"></div>
@@ -94,36 +159,36 @@
 <section id="bogota">
   <h3>Bogotá</h3>
   <img src="assets/guzman-pixels-giLN3uC2s9Y-unsplash.jpg" alt="Bogotá" />
-  <p>La capital de Colombia, **Bogotá**, es mucho más que el centro político del país. Situada a más de 2,600 metros sobre el nivel del mar, esta ciudad es un crisol de culturas y arte. Desde el majestuoso **Monserrate**, con su vista panorámica de la ciudad, hasta el vibrante **Candelaria**, el centro histórico lleno de coloridas calles empedradas y arquitectura colonial, Bogotá te invita a explorar su historia mientras te mantiene en contacto con su vida moderna.</p>
-  <p>Además de su arquitectura histórica, Bogotá es el hogar de importantes museos como el **Museo del Oro**, que alberga una de las colecciones más grandes de arte precolombino, y el **Museo Botero**, con las impresionantes obras del famoso artista colombiano Fernando Botero. No hay que olvidar su gastronomía, que refleja una fusión de influencias internacionales y autóctonas, y su oferta cultural que se extiende con eventos como el **Festival Iberoamericano de Teatro**.</p>
+  <p>Colombia’s capital, **Bogotá**, is much more than just the political centre of the country. Situated at over 2,600 metres above sea level, the city is a melting pot of cultures and art. From the majestic **Monserrate**, with its panoramic views of the city, to the vibrant **La Candelaria**, the historical centre with its cobbled streets and colonial architecture, Bogotá invites you to explore its history while staying in touch with its modern life.</p>
+  <p>In addition to its historical architecture, Bogotá is home to important museums such as the **Gold Museum**, which holds one of the largest collections of pre-Columbian art, and the **Botero Museum**, featuring impressive works by the famous Colombian artist Fernando Botero. Don’t forget its gastronomy, which reflects a fusion of international and local influences, as well as its cultural offerings, with events like the **Ibero-American Theatre Festival**.</p>
 </section>
 
 <section id="medellin">
   <h3>Medellín</h3>
   <img src="assets/andres-gomez-r5jb6b3XBGE-unsplash.jpg" alt="Medellín" />
-  <p>**Medellín** fue una ciudad conocida mundialmente por su violencia durante los años 80 y 90. Hoy, es un ejemplo de transformación urbana y social. Conocida por su cálido clima y su gente amable, Medellín ha evolucionado y hoy se presenta como una ciudad dinámica, **vibrante y llena de innovación**.</p>
-  <p>Una de las características más icónicas de Medellín es su **Metrocable**, un sistema de teleféricos que conecta los barrios de las laderas de la ciudad con el resto de la urbe, un símbolo de inclusión y superación. Además, Medellín es el hogar de eventos como la **Feria de las Flores**, un homenaje a la cultura antioqueña, y la famosa **Plaza Botero**, donde se pueden ver las esculturas de Fernando Botero que dan vida a la ciudad. Esta es una ciudad que ha logrado, a través de la educación y la cultura, superar sus oscuros momentos del pasado.</p>
+  <p>**Medellín** was once a city known worldwide for its violence during the 80s and 90s. Today, it stands as an example of urban and social transformation. Known for its warm climate and friendly people, Medellín has evolved into a dynamic, vibrant city filled with innovation.</p>
+  <p>One of Medellín’s most iconic features is its **Metrocable**, a cable car system that connects the hillside neighbourhoods with the rest of the city, symbolising inclusion and progress. Medellín is also home to events such as the **Flower Festival**, a tribute to Antioquian culture, and the famous **Botero Plaza**, where sculptures by Fernando Botero breathe life into the city. This is a city that has managed to overcome its troubled past through education and culture.</p>
 </section>
 
 <section id="cali">
   <h3>Cali</h3>
   <img src="assets/alexander-schimmeck-JAqMFE8Jclk-unsplash.jpg" alt="Cali" />
-  <p>Cali, la **capital de la salsa**, es sin duda una de las ciudades más alegres y rítmicas de Colombia. A orillas del río **Cali**, la ciudad se llena de música y color durante el **Festival Mundial de Salsa** y la **Feria de Cali**, uno de los eventos más importantes de la ciudad. Pero Cali es mucho más que salsa: es un lugar donde se celebra la cultura afrocolombiana, con una vibrante escena de danza, arte y teatro.</p>
-  <p>Uno de los lugares más emblemáticos de Cali es el **Cristo Rey**, una estatua gigante de Cristo que se alza sobre la ciudad y ofrece una vista espectacular del valle del río Cauca. La ciudad también es famosa por sus parques, como el **Parque de los Gatos** y el **Parque del Perro**, que ofrecen un respiro en medio de su vida urbana vibrante.</p>
+  <p>**Cali**, the salsa capital, is undoubtedly one of the most cheerful and rhythmic cities in Colombia. Located on the banks of the **Cali River**, the city fills with music and colour during the **World Salsa Festival** and the **Cali Fair**, two of the city's most important events. But Cali is more than just salsa; it is a place where Afro-Colombian culture is celebrated, with a vibrant scene of dance, art, and theatre.</p>
+  <p>One of Cali’s most iconic landmarks is **Cristo Rey**, a giant statue of Christ that stands tall above the city, offering a spectacular view of the Cauca River valley. The city is also famous for its parks, such as **Parque de los Gatos** and **Parque del Perro**, which provide a break from the vibrant urban life.</p>
 </section>
 
 <section id="barranquilla">
   <h3>Barranquilla</h3>
   <img src="assets/markus-kammermann-7y3--tvFi0k-unsplash.jpg" alt="Barranquilla" />
-  <p>**Barranquilla** es la **capital del Carnaval**, y no solo porque sea una de las fiestas más grandes de Colombia, sino porque esta ciudad caribeña es una mezcla de culturas, colores y sonidos. Su **Carnaval de Barranquilla** ha sido declarado **Patrimonio de la Humanidad** por la UNESCO, y durante esta celebración, las calles se llenan de desfiles, danzas, música y disfraces.</p>
-  <p>La ciudad no solo es famosa por su Carnaval, sino también por su crecimiento como un **centro industrial y comercial** clave en la región Caribe. **Barranquilla** tiene una fuerte identidad cultural, que se refleja tanto en su música como en su arquitectura, con influencias que van desde la época colonial hasta el art déco. La **Calle 84** es un ejemplo de esta fusión, con su vida nocturna y sus restaurantes que sirven lo mejor de la gastronomía costeña.</p>
+  <p>**Barranquilla** is the **Carnival capital**, and not just because it hosts one of the largest festivals in Colombia, but because this Caribbean city is a fusion of cultures, colours, and sounds. Its **Barranquilla Carnival** has been declared a **UNESCO World Heritage event**, and during this celebration, the streets are filled with parades, dances, music, and costumes.</p>
+  <p>The city is not only famous for its Carnival but also for its growth as a key industrial and commercial hub in the Caribbean region. **Barranquilla** has a strong cultural identity, reflected in both its music and architecture, with influences ranging from colonial times to art deco. **Calle 84** is a prime example of this fusion, with its nightlife and restaurants serving the best of coastal cuisine.</p>
 </section>
 
 <section id="bucaramanga">
   <h3>Bucaramanga</h3>
   <img src="assets/ricardo-gomez-angel-gwMheruHlXk-unsplash.jpg" alt="Bucaramanga" />
-  <p>**Bucaramanga** es una ciudad de contrastes, donde lo moderno y lo natural se encuentran en armonía. Conocida como la **ciudad de los parques**, Bucaramanga tiene más de 160 áreas verdes, como el **Parque del Chicamocha**, que ofrece una impresionante vista del **Cañón de Chicamocha**, uno de los paisajes más espectaculares de Colombia.</p>
-  <p>Además de su belleza natural, Bucaramanga es una ciudad con un fuerte **enfoque en la educación** y la innovación. Se ha convertido en un **polo de desarrollo** en el noreste de Colombia, con una infraestructura moderna, una excelente calidad de vida y una población amigable y acogedora. Su arquitectura, que combina lo clásico y lo moderno, y sus **centros comerciales** y **restaurantes** hacen de Bucaramanga una ciudad que tiene todo para ofrecer.</p>
+  <p>**Bucaramanga** is a city of contrasts, where the modern and the natural come together in harmony. Known as the **city of parks**, Bucaramanga boasts over 160 green areas, such as **Parque del Chicamocha**, which offers a breathtaking view of the **Chicamocha Canyon**, one of the most spectacular landscapes in Colombia.</p>
+  <p>In addition to its natural beauty, Bucaramanga is a city with a strong focus on education and innovation. It has become a development hub in northeastern Colombia, with modern infrastructure, high quality of life, and a friendly and welcoming population. Its architecture, which blends the classical and the modern, and its shopping malls and restaurants, make Bucaramanga a city that truly has everything to offer.</p>
 </section>
 </main>
 </body>
