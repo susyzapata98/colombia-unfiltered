@@ -29,6 +29,9 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  background: linear-gradient(to left, #FFD700, #0033A0, #F00); /* Amarillo, Azul, Rojo */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 p {
   font-size: 1.2rem;
