@@ -1,31 +1,36 @@
-# Colombia Unfiltered
+# Colombia Unfiltered 🇨🇴
 
 **From myth to reality. A country beyond Escobar.**
 
-This blog was created to change the global narrative about Colombia. It’s a journey through the country’s true identity — its politics, biodiversity, coffee culture, vibrant cities, and a future full of promise.
+This blog is a digital journey through Colombia's true essence — far from outdated stereotypes. Created and designed by **Susana Zapata**, it highlights the country's beauty, resilience, and transformation through culture, nature, cities, coffee, and politics.
 
-## 🌐 What you'll find
+---
 
-- A cultural and visual journey across Colombia  
-- Real stories beyond stereotypes  
-- A layout designed for storytelling, with images and narrative sections  
+## 🌍 What you'll find
 
-## 💻 Technologies Used
+- 🇨🇴 **About Me** – A personal voice behind the project
+- 🗳️ **Politics** – A look at Colombia's political evolution
+- 🌿 **Nature** – The biodiversity that makes Colombia unique
+- ☕ **Coffee** – Culture and export of our national treasure
+- 🏙️ **Cities** – Bogotá, Medellín, Cali, Barranquilla, Bucaramanga
+- 📼 **1990s vs Today** – From chaos to progress
+- 🚀 **Future** – A nation reshaping its narrative
 
-- HTML5  
-- CSS3  
-- Hosted on GitHub Pages  
+---
+
+## 🛠️ Built with
+
+- **HTML & CSS**
+- Hosted via **GitHub Pages**
+
+---
 
 ## 📸 Author
 
-Created by **Susana Zapata**, currently based in Melbourne, Australia.
+Made with ❤️ by **Susana Zapata**, to show the world a Colombia worth discovering.
 
 ---
 
-> “We want Colombia to be known for its beauty, not for its past.” 🇨🇴
+## 🔗 View live
 
-Created by **Susana Zapata**, currently based in Melbourne, Australia.
-
----
-
-> “We want Colombia to be known for its beauty, not for its past.” 🇨🇴
+👉 [https://susyzapata98.github.io/colombia-unfiltered](https://susyzapata98.github.io/colombia-unfiltered)
