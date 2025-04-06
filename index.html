@@ -112,6 +112,103 @@
   </script>
 
   <style>
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 80px 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+main {
+  text-align: justify;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Efectos al pasar el mouse sobre los enlaces del menú */
+.side-menu a:hover {
+  background-color: #FFD700;
+  color: #0033A0;
+  text-decoration: underline;
+}
+
+/* Transición suave para el menú */
+.menu-toggle {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.side-menu {
+  display: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding-top: 60px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.side-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Animación suave para mostrar el menú */
+@keyframes slideIn {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.hero-text {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
     .menu-toggle {
       display: block;
       font-size: 30px;
