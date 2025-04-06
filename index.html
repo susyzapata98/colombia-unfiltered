@@ -49,55 +49,55 @@
 
   <section class="about-me">
     <h2>About Me</h2>
-    <p style="text-align: center;">I am from South America, Colombia, and I love my country with all my heart. For many years, Colombia has been wrongly associated with drugs and the notorious figure of Pablo Escobar. However, this story is far from the truth. Colombia is a country of resilience, beauty, and diversity, full of rich culture, history, and hope. Through my work, I strive to break these misconceptions and show the world the Colombia beyond the clichés – a country that is flourishing, evolving and truly worth knowing.</p>
+    <p style="text-align: center;">I am from South America, Colombia, and I love my country with all my heart. For many years, Colombia has been wrongly associated with drugs and the notorious figure of Pablo Escobar. However, this story is far from the truth. Colombia is a country of resilience, beauty, and diversity, full of rich culture, history, and hope. Through my work, I strive to break these misconceptions and show the world the Colombia beyond the clichés – a country that is flourishing, evolving,...
   </section>
 
   <main>
     <section id="political-reality">
       <h2>Voices in the Storm: Colombia’s Political Reality Today</h2>
-      <p style="text-align: justify;">Colombia’s political landscape is increasingly dynamic...</p>
+      <p style="text-align: center;">Colombia’s political landscape is increasingly dynamic...</p>
     </section>
 
     <section id="natural-beauty">
       <h2>The Green Jewel of the Continent: Colombia’s Natural Beauty</h2>
       <img src="assets/crown-C2Csf_LbSVo-unsplash.jpg" alt="Nature" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">With two oceans, the Amazon, deserts, snow-capped mountains...</p>
+      <p style="text-align: center;">With two oceans, the Amazon, deserts, snow-capped mountains...</p>
     </section>
 
     <section id="colombian-coffee">
       <h2>Liquid Gold: Colombian Coffee Around the World</h2>
       <img src="assets/nathan-dumlao-ybn7jei_-i4-unsplash.jpg" alt="Coffee" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Colombian coffee is a symbol of national pride...</p>
+      <p style="text-align: center;">Colombian coffee is a symbol of national pride...</p>
     </section>
 
     <section id="bogota">
       <h3>Bogotá</h3>
       <img src="assets/guzman-pixels-giLN3uC2s9Y-unsplash.jpg" alt="Bogotá" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Colombia’s capital, Bogotá, is much more than just the political centre of the country...</p>
+      <p style="text-align: center;">Colombia’s capital, Bogotá, is much more than just the political centre of the country...</p>
     </section>
 
     <section id="medellin">
       <h3>Medellín</h3>
       <img src="assets/andres-gomez-r5jb6b3XBGE-unsplash.jpg" alt="Medellín" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Medellín was once a city known worldwide for its violence...</p>
+      <p style="text-align: center;">Medellín was once a city known worldwide for its violence...</p>
     </section>
 
     <section id="cali">
       <h3>Cali</h3>
       <img src="assets/alexander-schimmeck-JAqMFE8Jclk-unsplash.jpg" alt="Cali" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Cali, the salsa capital, is undoubtedly one of the most cheerful cities...</p>
+      <p style="text-align: center;">Cali, the salsa capital, is undoubtedly one of the most cheerful cities...</p>
     </section>
 
     <section id="barranquilla">
       <h3>Barranquilla</h3>
       <img src="assets/markus-kammermann-7y3--tvFi0k-unsplash.jpg" alt="Barranquilla" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Barranquilla is the **Carnival capital**, and not just because it hosts one of the largest festivals in Colombia...</p>
+      <p style="text-align: center;">Barranquilla is the Carnival capital...</p>
     </section>
 
     <section id="bucaramanga">
       <h3>Bucaramanga</h3>
       <img src="assets/ricardo-gomez-angel-gwMheruHlXk-unsplash.jpg" alt="Bucaramanga" style="width: 80%; margin: 0 auto; display: block;" />
-      <p style="text-align: justify;">Bucaramanga is a city of contrasts, where the modern and the natural come together...</p>
+      <p style="text-align: center;">Bucaramanga is a city of contrasts, where the modern and the natural come together...</p>
     </section>
   </main>
 
@@ -112,6 +112,103 @@
   </script>
 
   <style>
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 80px 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+main {
+  text-align: justify;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Efectos al pasar el mouse sobre los enlaces del menú */
+.side-menu a:hover {
+  background-color: #FFD700;
+  color: #0033A0;
+  text-decoration: underline;
+}
+
+/* Transición suave para el menú */
+.menu-toggle {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.side-menu {
+  display: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding-top: 60px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.side-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Animación suave para mostrar el menú */
+@keyframes slideIn {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.hero-text {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
     .menu-toggle {
       display: block;
       font-size: 30px;
@@ -132,7 +229,6 @@
       height: 100%;
       padding-top: 60px;
       z-index: 100;
-      transition: all 0.5s ease-in-out;
     }
     .side-menu ul {
       list-style-type: none;
@@ -151,7 +247,7 @@
     .side-menu a:hover {
       background-color: #FFD700;
     }
-    /* Animación para mostrar el menú */
+    /* Animation for the menu */
     @keyframes slideIn {
       from {
         left: -250px;
