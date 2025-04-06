@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colombia Unfiltered</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('portada.jpg') center center/cover no-repeat;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      top: 40%;
+    }
+    .menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #1f2937;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      z-index: 10;
+    }
+    .menu:hover .dropdown {
+      display: block;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      background: white;
+      color: black;
+      margin-top: 5px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 26px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: justify;
+    }
+    img {
+      width: 60%;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    Menu
+    <div class="dropdown">
+      <a href="#about">About Me</a>
+      <a href="#politics">Politics</a>
+      <a href="#nature">Nature</a>
+      <a href="#coffee">Coffee</a>
+      <a href="#cities">Cities</a>
+      <a href="#nineties">1990s vs Today</a>
+      <a href="#future">Future</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1 style="font-size: 48px;">Colombia Unfiltered</h1>
+      <p style="font-size: 20px;">From myth to reality. A country beyond Escobar.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am from South America, Colombia, and I love my country deeply. Over the years, I’ve come to realise that many people abroad still associate Colombia with drug trafficking and Pablo Escobar. This perception, often reinforced by films and media, doesn't reflect the reality of who we are.<br><br>
+      Through this blog, I want to show the true spirit of Colombia — our rich culture, kind people, breathtaking landscapes, and the incredible progress we’ve made. Colombia is much more than its past. It’s a country full of colour, rhythm, resilience, and dreams. I hope this space helps others see it through the same lens of love and pride with which I do.</p>
+    </section>
+
+    <section id="politics">
+      <h2>Politics in Colombia</h2>
+      <img src="1990scolombia.jpg" alt="Politics in Colombia" />
+      <p>Colombia's politics reflect a nation in transition — from conflict to peace, and from silence to civic expression. Since the 2016 peace agreement with the FARC, the country has made strides towards reconciliation, though tensions and inequalities persist.<br><br>
+      Young people have become powerful voices for change, using protests, art, and digital platforms to demand social justice and transparency. Cities like Bogotá and Medellín now represent not only political hubs but also spaces of cultural resistance and hope.<br><br>
+      To understand Colombia’s politics is to witness its resilience — a society learning from the past while striving to build a more inclusive and democratic future.</p>
+    </section>
+
+    <section id="nature">
+      <h2>Nature & Biodiversity</h2>
+      <img src="nature.jpg" alt="Nature in Colombia" />
+      <p>Colombia is one of the most biodiverse countries on Earth, ranking first in bird and orchid species and second in plants, butterflies, and freshwater fish. From the Amazon rainforest to the Andes mountains, the Caribbean coast to the Pacific jungle, its ecosystems are incredibly varied and breathtaking.<br><br>
+      Nature in Colombia is not just scenery — it is culture, identity, and life. Indigenous and rural communities have preserved deep connections with the land, offering visitors a chance to experience both stunning landscapes and ancient wisdom.<br><br>
+      Exploring Colombia's natural beauty is a journey through waterfalls, cloud forests, desert dunes, and coral reefs. It’s a call to discover and protect one of the planet’s richest natural heritages.</p>
+    </section>
+
+    <section id="coffee">
+      <h2>Colombian Coffee Culture</h2>
+      <img src="coffee.jpg" alt="Colombian Coffee Culture" />
+      <p>Coffee is at the heart of Colombia’s identity. More than just a beverage, it is a cultural symbol and a way of life for thousands of farming families. The lush mountains of the Coffee Axis (Eje Cafetero) offer perfect growing conditions for high-quality Arabica beans, known for their smooth flavour and rich aroma.<br><br>
+      Colombian coffee is not only enjoyed locally — it is one of the country's most important exports, reaching countries across Europe, North America, and Asia. Its global reputation has helped promote fair trade practices and sustainable farming, empowering rural communities and supporting the national economy.<br><br>
+      Visiting a Colombian coffee farm is an immersive experience. From picking cherries by hand to tasting freshly brewed cups surrounded by green hills, it’s a sensory journey that connects visitors with the people and the land behind every bean.</p>
+    </section>
+
+    <section id="cities">
+      <h2>Cities to Discover</h2>
+      <p>(Aquí van los textos e imágenes de Bogotá, Medellín, Cali, Barranquilla y Bucaramanga)</p>
+    </section>
+
+    <section id="nineties">
+      <h2>Colombia: 1990s vs Today</h2>
+      <img src="medellin.jpg" alt="Colombia 1990s vs Today" />
+      <p>The Colombia of the 1990s was marked by violence, fear, and instability. Drug cartels, armed conflict, and political unrest painted a dark picture of a country struggling for peace. Many Colombians lived through a daily reality of uncertainty, curfews, and security checkpoints.<br><br>
+      Today, Colombia tells a different story. While challenges remain, the country has made remarkable strides. Public spaces have been revitalised, tourism has blossomed, and cities once known for conflict are now celebrated for innovation, art, and resilience.<br><br>
+      The change is visible in the streets, in the faces of young people leading social movements, and in the growing sense of national pride. Colombia is no longer defined by its past — it is shaped by its future and by those determined to rewrite its narrative.</p>
+    </section>
+
+    <section id="future">
+      <h2>Colombia of the Future</h2>
+      <img src="flag.jpg" alt="Future of Colombia" />
+      <p>Colombia is embracing a future driven by innovation, sustainability, and inclusion. From the rise of tech hubs in Medellín to eco-tourism initiatives in the Amazon and the Sierra Nevada, the country is investing in long-term progress that benefits people and nature alike.<br><br>
+      Young Colombians are leading movements for climate action, social equality, and cultural preservation. Entrepreneurship is thriving, with local solutions emerging in education, green energy, and digital access. The Colombia of tomorrow is being shaped by citizens who believe in creating lasting change.<br><br>
+      For too long, Colombia has been reduced to a single narrative — one shaped by Pablo Escobar and the drug trade. But that image no longer defines us. The world is beginning to see Colombia for what it truly is: a land of breathtaking beauty, creativity, resilience, and joy. We want to be known for our music, biodiversity, literature, coffee, and our spirit — not for a past we are overcoming.<br><br>
+      The future belongs to a Colombia proud of its roots and fearless in its dreams. And this blog is just one of many voices helping share that vision with the world.</p>
+    </section>
+  </main>
+</body>
+</html>
