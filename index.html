@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colombia Unfiltered</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+      display: flex;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .hero-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+      top: 40%;
+    }
+    nav.sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      padding: 20px;
+      background: #f0f0f0;
+      z-index: 10;
+    }
+    nav.sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav.sidebar li {
+      margin-bottom: 15px;
+    }
+    main.content {
+      margin-left: 220px;
+      padding: 30px;
+      max-width: 900px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+    }
+    img {
+      width: 70%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#politics">Politics</a></li>
+      <li><a href="#nature">Nature</a></li>
+      <li><a href="#coffee">Coffee</a></li>
+      <li><a href="#cities">Cities</a></li>
+      <li><a href="#nineties">1990s vs Today</a></li>
+      <li><a href="#future">Future</a></li>
+    </ul>
+  </nav>
+
+  <div style="flex: 1;">
+    <header>
+      <img src="portada.jpg" alt="Colombia skyline" class="hero-bg"/>
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h1>Colombia Unfiltered</h1>
+        <p>From myth to reality. A country beyond Escobar.</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am from South America, Colombia, and I love my country deeply. Over the years, I’ve come to realise that many people abroad still associate Colombia with drug trafficking and Pablo Escobar. This perception, often reinforced by films and media, doesn't reflect the reality of who we are.<br><br>
+          Through this blog, I want to show the true spirit of Colombia — our rich culture, kind people, breathtaking landscapes, and the incredible progress we’ve made. Colombia is much more than its past. It’s a country full of colour, rhythm, resilience, and dreams. I hope this space helps others see it through the same lens of love and pride with which I do.
+        </p>
+      </section>
+
+      <section id="politics">
+        <h2>Politics in Colombia</h2>
+        <img src="1990scolombia.jpg" alt="Politics in Colombia"/>
+        <p>
+          Colombia's politics reflect a nation in transition — from conflict to peace, and from silence to civic expression...
+        </p>
+      </section>
+
+      <section id="nature">
+        <h2>Nature & Biodiversity</h2>
+        <img src="nature.jpg" alt="Nature in Colombia"/>
+        <p>
+          Colombia is one of the most biodiverse countries on Earth, ranking first in bird and orchid species...
+        </p>
+      </section>
+
+      <section id="coffee">
+        <h2>Colombian Coffee Culture</h2>
+        <img src="coffee.jpg" alt="Colombian Coffee Culture"/>
+        <p>
+          Coffee is at the heart of Colombia’s identity. More than just a beverage, it is a cultural symbol and a way of life...
+        </p>
+      </section>
+
+      <section id="cities">
+        <h2>Cities to Discover</h2>
+        <p>(City section already includes images: Bogotá, Medellín, Cali, Barranquilla, Bucaramanga)</p>
+      </section>
+
+      <section id="nineties">
+        <h2>Colombia: 1990s vs Today</h2>
+        <img src="medellin.jpg" alt="Colombia 1990s vs Today"/>
+        <p>
+          The Colombia of the 1990s was marked by violence, fear, and instability...
+        </p>
+      </section>
+
+      <section id="future">
+        <h2>Colombia of the Future</h2>
+        <img src="flag.jpg" alt="Future of Colombia"/>
+        <p>
+          Colombia is embracing a future driven by innovation, sustainability, and inclusion...
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
