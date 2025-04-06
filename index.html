@@ -9,18 +9,33 @@
 </head>
 <body>
   <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
-  <nav class="side-menu" id="sideMenu">
+  <nav class="side-menu" id="sideMenu" style="position: fixed; left: 0; top: 0; height: 100%; background: transparent; z-index: 100;">
     <ul>
-      <li><a href="#political-reality">Voices in the Storm: Colombia’s Political Reality Today</a></li>
-      <li><a href="#natural-beauty">The Green Jewel of the Continent: Colombia’s Natural Beauty</a></li>
-      <li><a href="#colombian-coffee">Liquid Gold: Colombian Coffee Around the World</a></li>
-      <li><a href="#bogota">Bogotá – The Cultural Capital</a></li>
-      <li><a href="#medellin">Medellín – The Metrocable and Urban Transformation</a></li>
-      <li><a href="#cali">Cali – Salsa and Afro-Colombian Culture</a></li>
-      <li><a href="#barranquilla">Barranquilla – Carnival and Unfiltered Joy</a></li>
-      <li><a href="#bucaramanga">Bucaramanga – Chicamocha Canyon, Nature and Progress</a></li>
-      <li><a href="#90s-colombia">From Shadows to Light: Colombia in the 90s vs Now</a></li>
-      <li><a href="#colombia-future">The Future of Colombia</a></li>
+      <li><a href="#political-reality">1. Voices in the Storm: Colombia’s Political Reality Today</a></li>
+      <li><a href="#natural-beauty">2. The Green Jewel of the Continent: Colombia’s Natural Beauty</a></li>
+      <li><a href="#colombian-coffee">3. Liquid Gold: Colombian Coffee Around the World</a></li>
+      <li><a href="#bogota">4. Bogotá – The Cultural Capital</a></li>
+      <ul>
+          <li><a href="#bogota">- Bogotá</a></li>
+      </ul>
+      <li><a href="#medellin">5. Medellín – The Metrocable and Urban Transformation</a></li>
+      <ul>
+          <li><a href="#medellin">- Medellín</a></li>
+      </ul>
+      <li><a href="#cali">6. Cali – Salsa and Afro-Colombian Culture</a></li>
+      <ul>
+          <li><a href="#cali">- Cali</a></li>
+      </ul>
+      <li><a href="#barranquilla">7. Barranquilla – Carnival and Unfiltered Joy</a></li>
+      <ul>
+          <li><a href="#barranquilla">- Barranquilla</a></li>
+      </ul>
+      <li><a href="#bucaramanga">8. Bucaramanga – Chicamocha Canyon, Nature and Progress</a></li>
+      <ul>
+          <li><a href="#bucaramanga">- Bucaramanga</a></li>
+      </ul>
+      <li><a href="#90s-colombia">9. From Shadows to Light: Colombia in the 90s vs Now</a></li>
+      <li><a href="#colombia-future">10. The Future of Colombia</a></li>
     </ul>
   </nav>
 
@@ -34,7 +49,7 @@
 
   <section class="about-me">
     <h2>About Me</h2>
-    <p style="text-align: center;">I am from South America, Colombia, and I love my country with all my heart. For many years, Colombia has been wrongly associated with drugs and the notorious figure of Pablo Escobar. However, this story is far from the truth. Colombia is a country of resilience, beauty, and diversity, full of rich culture, history, and hope. Through my work, I strive to break these misconceptions and show the world the Colombia beyond the clichés – a country that is flourishing, evolving, and redefining itself.</p>
+    <p style="text-align: center;">I am from South America, Colombia, and I love my country with all my heart. For many years, Colombia has been wrongly associated with drugs and the notorious figure of Pablo Escobar. However, this story is far from the truth. Colombia is a country of resilience, beauty, and diversity, full of rich culture, history, and hope. Through my work, I strive to break these misconceptions and show the world the Colombia beyond the clichés – a country that is flourishing, evolving,...
   </section>
 
   <main>
@@ -101,7 +116,7 @@
       display: block;
       font-size: 30px;
       color: #fff;
-      background-color: #0033A0;
+      background-color: transparent;
       padding: 10px;
       text-align: center;
       cursor: pointer;
@@ -109,7 +124,7 @@
     }
     .side-menu {
       display: none;
-      background-color: #111;
+      background-color: transparent;
       position: absolute;
       top: 0;
       left: 0;
@@ -145,6 +160,5 @@
       }
     }
   </style>
-
 </body>
 </html>
