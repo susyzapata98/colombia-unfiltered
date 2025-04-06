@@ -21,7 +21,6 @@ This blog is a digital journey through Colombia's true essence — far from outd
 ## 🛠️ Built with
 
 - **HTML & CSS**
-- **TailwindCSS** (if used)
 - Hosted via **GitHub Pages**
 
 ---
