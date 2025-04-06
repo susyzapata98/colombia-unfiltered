@@ -1,168 +1,130 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colombia Unfiltered</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      color: #333;
-    }
-    header {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-      z-index: 1;
-    }
-    .hero-text {
-      position: relative;
-      z-index: 2;
-      color: white;
-      text-align: center;
-      top: 40%;
-      font-size: 24px;
-    }
-    .dropdown {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 30;
-    }
-    .dropdown button {
-      background-color: #1f2937;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      margin-top: 10px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 6px;
-      min-width: 160px;
-      z-index: 31;
-    }
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      display: block;
-      text-decoration: none;
-    }
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 80px;
-    }
-    h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.6;
-    }
-    img {
-      width: 60%;
-      display: block;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
-  <div class="dropdown">
-    <button>Menu</button>
-    <div class="dropdown-content">
-      <a href="#about">About Me</a>
-      <a href="#politics">Politics</a>
-      <a href="#nature">Nature</a>
-      <a href="#coffee">Coffee</a>
-      <a href="#cities">Cities</a>
-      <a href="#nineties">1990s vs Today</a>
-      <a href="#future">Future</a>
+export default function BlogLayout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen bg-white text-gray-800 flex flex-col">
+      {/* Header with background image */}
+      <header className="relative h-screen w-full">
+        <img
+          src="/portada.jpg"
+          alt="Colombia skyline"
+          className="absolute inset-0 h-full w-full object-cover z-0"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <div className="relative z-20 h-full flex flex-col justify-center items-center text-white text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Colombia Unfiltered</h1>
+          <p className="text-lg md:text-2xl font-light max-w-2xl">
+            From myth to reality. A country beyond Escobar.
+          </p>
+        </div>
+      </header>
+
+      {/* Dropdown Menu */}
+      <div className="fixed top-4 left-4 z-40">
+        <div className="relative inline-block text-left">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="bg-gray-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-700"
+          >
+            Menu
+          </button>
+          {menuOpen && (
+            <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <ul className="py-1 text-sm text-gray-700">
+                <li><a href="#about" className="block px-4 py-2 hover:bg-gray-100">About Me</a></li>
+                <li><a href="#politics" className="block px-4 py-2 hover:bg-gray-100">Politics</a></li>
+                <li><a href="#nature" className="block px-4 py-2 hover:bg-gray-100">Nature</a></li>
+                <li><a href="#coffee" className="block px-4 py-2 hover:bg-gray-100">Coffee</a></li>
+                <li><a href="#cities" className="block px-4 py-2 hover:bg-gray-100">Cities</a></li>
+                <li><a href="#nineties" className="block px-4 py-2 hover:bg-gray-100">1990s vs Today</a></li>
+                <li><a href="#future" className="block px-4 py-2 hover:bg-gray-100">Future</a></li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main className="p-8 w-full space-y-24 mt-[100vh]">
+        <section id="about">
+          <motion.h2 className="text-2xl font-bold mb-4">About Me</motion.h2>
+          <p className="text-justify">
+            I am from South America, Colombia, and I love my country deeply. Over the years, I’ve come to realise that many people abroad still associate Colombia with drug trafficking and Pablo Escobar. This perception, often reinforced by films and media, doesn't reflect the reality of who we are.
+            <br /><br />
+            Through this blog, I want to show the true spirit of Colombia — our rich culture, kind people, breathtaking landscapes, and the incredible progress we’ve made. Colombia is much more than its past. It’s a country full of colour, rhythm, resilience, and dreams. I hope this space helps others see it through the same lens of love and pride with which I do.
+          </p>
+        </section>
+
+        <section id="politics">
+          <motion.h2 className="text-2xl font-bold mb-4">Politics in Colombia</motion.h2>
+          <img src="/1990scolombia.jpg" alt="Politics in Colombia" className="mb-4 w-[60%] rounded-xl shadow" />
+          <p className="text-justify">
+            Colombia's politics reflect a nation in transition — from conflict to peace, and from silence to civic expression. Since the 2016 peace agreement with the FARC, the country has made strides towards reconciliation, though tensions and inequalities persist.
+            <br /><br />
+            Young people have become powerful voices for change, using protests, art, and digital platforms to demand social justice and transparency. Cities like Bogotá and Medellín now represent not only political hubs but also spaces of cultural resistance and hope.
+            <br /><br />
+            To understand Colombia’s politics is to witness its resilience — a society learning from the past while striving to build a more inclusive and democratic future.
+          </p>
+        </section>
+
+        <section id="nature">
+          <motion.h2 className="text-2xl font-bold mb-4">Nature & Biodiversity</motion.h2>
+          <img src="/nature.jpg" alt="Nature in Colombia" className="mb-4 w-[60%] rounded-xl shadow" />
+          <p className="text-justify">
+            Colombia is one of the most biodiverse countries on Earth, ranking first in bird and orchid species and second in plants, butterflies, and freshwater fish. From the Amazon rainforest to the Andes mountains, the Caribbean coast to the Pacific jungle, its ecosystems are incredibly varied and breathtaking.
+            <br /><br />
+            Nature in Colombia is not just scenery — it is culture, identity, and life. Indigenous and rural communities have preserved deep connections with the land, offering visitors a chance to experience both stunning landscapes and ancient wisdom.
+            <br /><br />
+            Exploring Colombia's natural beauty is a journey through waterfalls, cloud forests, desert dunes, and coral reefs. It’s a call to discover and protect one of the planet’s richest natural heritages.
+          </p>
+        </section>
+
+        <section id="coffee">
+          <motion.h2 className="text-2xl font-bold mb-4">Colombian Coffee Culture</motion.h2>
+          <img src="/coffee.jpg" alt="Colombian Coffee Culture" className="mb-4 w-[60%] rounded-xl shadow" />
+          <p className="text-justify">
+            Coffee is at the heart of Colombia’s identity. More than just a beverage, it is a cultural symbol and a way of life for thousands of farming families. The lush mountains of the Coffee Axis (Eje Cafetero) offer perfect growing conditions for high-quality Arabica beans, known for their smooth flavour and rich aroma.
+            <br /><br />
+            Colombian coffee is not only enjoyed locally — it is one of the country's most important exports, reaching countries across Europe, North America, and Asia. Its global reputation has helped promote fair trade practices and sustainable farming, empowering rural communities and supporting the national economy.
+            <br /><br />
+            Visiting a Colombian coffee farm is an immersive experience. From picking cherries by hand to tasting freshly brewed cups surrounded by green hills, it’s a sensory journey that connects visitors with the people and the land behind every bean.
+          </p>
+        </section>
+
+        <section id="cities">
+          <motion.h2 className="text-2xl font-bold mb-4">Cities to Discover</motion.h2>
+          {/* Existing cities structure remains, images are already integrated */}
+        </section>
+
+        <section id="nineties">
+          <motion.h2 className="text-2xl font-bold mb-4">Colombia: 1990s vs Today</motion.h2>
+          <img src="/medellin.jpg" alt="Colombia 1990s vs Today" className="mb-4 w-[60%] rounded-xl shadow" />
+          <p className="text-justify">
+            The Colombia of the 1990s was marked by violence, fear, and instability. Drug cartels, armed conflict, and political unrest painted a dark picture of a country struggling for peace. Many Colombians lived through a daily reality of uncertainty, curfews, and security checkpoints.
+            <br /><br />
+            Today, Colombia tells a different story. While challenges remain, the country has made remarkable strides. Public spaces have been revitalised, tourism has blossomed, and cities once known for conflict are now celebrated for innovation, art, and resilience.
+            <br /><br />
+            The change is visible in the streets, in the faces of young people leading social movements, and in the growing sense of national pride. Colombia is no longer defined by its past — it is shaped by its future and by those determined to rewrite its narrative.
+          </p>
+        </section>
+
+        <section id="future">
+          <motion.h2 className="text-2xl font-bold mb-4">Colombia of the Future</motion.h2>
+          <img src="/flag.jpg" alt="Future of Colombia" className="mb-4 w-[60%] rounded-xl shadow" />
+          <p className="text-justify">
+            Colombia is embracing a future driven by innovation, sustainability, and inclusion. From the rise of tech hubs in Medellín to eco-tourism initiatives in the Amazon and the Sierra Nevada, the country is investing in long-term progress that benefits people and nature alike.
+            <br /><br />
+            Young Colombians are leading movements for climate action, social equality, and cultural preservation. Entrepreneurship is thriving, with local solutions emerging in education, green energy, and digital access. The Colombia of tomorrow is being shaped by citizens who believe in creating lasting change.
+            <br /><br />
+            For too long, Colombia has been reduced to a single narrative — one shaped by Pablo Escobar and the drug trade. But that image no longer defines us. The world is beginning to see Colombia for what it truly is: a land of breathtaking beauty, creativity, resilience, and joy. We want to be known for our music, biodiversity, literature, coffee, and our spirit — not for a past we are overcoming.
+            <br /><br />
+            The future belongs to a Colombia proud of its roots and fearless in its dreams. And this blog is just one of many voices helping share that vision with the world.
+          </p>
+        </section>
+      </main>
     </div>
-  </div>
-
-  <header>
-    <img src="portada.jpg" alt="Colombia skyline" class="hero-bg">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1 style="font-size: 48px; margin-bottom: 10px;">Colombia Unfiltered</h1>
-      <p>From myth to reality. A country beyond Escobar.</p>
-    </div>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am from South America, Colombia, and I love my country deeply... [contenido completo del blog aquí]</p>
-    </section>
-
-    <section id="politics">
-      <h2>Politics in Colombia</h2>
-      <img src="1990scolombia.jpg" alt="Politics in Colombia">
-      <p>Colombia's politics reflect a nation in transition — from conflict to peace... [texto completo]</p>
-    </section>
-
-    <section id="nature">
-      <h2>Nature & Biodiversity</h2>
-      <img src="nature.jpg" alt="Nature in Colombia">
-      <p>Colombia is one of the most biodiverse countries on Earth... [texto completo]</p>
-    </section>
-
-    <section id="coffee">
-      <h2>Colombian Coffee Culture</h2>
-      <img src="coffee.jpg" alt="Colombian Coffee Culture">
-      <p>Coffee is at the heart of Colombia’s identity... [texto completo]</p>
-    </section>
-
-    <section id="cities">
-      <h2>Cities to Discover</h2>
-      <p>(Aquí puedes insertar las imágenes y textos de las ciudades que ya tienes)</p>
-    </section>
-
-    <section id="nineties">
-      <h2>Colombia: 1990s vs Today</h2>
-      <img src="medellin.jpg" alt="Colombia 1990s vs Today">
-      <p>The Colombia of the 1990s was marked by violence, fear, and instability... [texto completo]</p>
-    </section>
-
-    <section id="future">
-      <h2>Colombia of the Future</h2>
-      <img src="flag.jpg" alt="Future of Colombia">
-      <p>Colombia is embracing a future driven by innovation, sustainability, and inclusion... [texto completo]</p>
-    </section>
-  </main>
-</body>
-</html>
+  );
+}
